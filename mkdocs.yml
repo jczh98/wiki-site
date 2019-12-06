@@ -19,11 +19,11 @@ theme:
     code: 'Fira Mono'
 
 extra_css:
-  - 'css/katex.css'
+  - '_static/css/katex.css'
   - 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css'
 
 extra_javascript:
-  - 'js/katex.js'
+  - '_static/js/katex.js'
   - 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js'
   - 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js'
 
@@ -36,6 +36,8 @@ nav:
   - Graphics :
     - Rendering:
       - Offline: graphics/rendering/offline.md
+    - Simulation:
+      - Basic: graphics/simulation/basic.md
 
 # Extensions
 markdown_extensions:
