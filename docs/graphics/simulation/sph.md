@@ -15,7 +15,7 @@ $\rho(\mathbf{r_i})=\sum_j m_j W(\mathbf{r}_i-\mathbf{r}_j,h)$
 $\mathbf{n}(\boldsymbol{r})=\sum_j \frac{m_J}{\rho_j}\nabla^2W(\mathbf{r}-\mathbf{r}_j, h)$
 
 ### 压力
-$\mathbf{f}_{i}=-\rho\sum_{j!=i}(\frac{p_i}{\rho_i^2}+\frac{p_j}{\rho_j^2})m_j\nabla W(\boldsymbol{r}_i-\boldsymbol{r}_j, h)$
+$\mathbf{f}_{i}=-\rho_{i} \sum_{j \neq i}\left(\frac{p_{i}}{\rho_{i}^{2}}+\frac{p_{j}}{\rho_{j}^{2}}\right) m_{j} \nabla W\left(\mathbf{r}_{i}-\mathbf{r}_{j}, h\right)$
 
 ### 沾性力(viscosity force)
 $\mathbf{f}_{i}=\mu\sum_{j!=i}(\mathbf{u}_j-\mathbf{u}_i)\frac{m_j}{\rho_j}\nabla^2W(\boldsymbol{r}_i-\boldsymbol{r}_j, h)$
