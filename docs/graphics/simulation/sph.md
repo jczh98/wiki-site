@@ -15,13 +15,13 @@ $\rho(\mathbf{r_i})=\sum_j m_j W(\mathbf{r}_i-\mathbf{r}_j,h)$
 $\mathbf{n}(\boldsymbol{r})=\sum_j \frac{m_J}{\rho_j}\nabla^2W(\mathbf{r}-\mathbf{r}_j, h)$
 
 ### 压力
-$\mathbf{f}_i=-\rho\sum_{j!=i}(\frac{p_i}{\rho_i^2}+\frac{p_j}{\rho_j^2})m_j\nabla W(\boldsymbol{r}_i-\boldsymbol{r}_j, h)$
+$\mathbf{f}_{i}=-\rho\sum_{j!=i}(\frac{p_i}{\rho_i^2}+\frac{p_j}{\rho_j^2})m_j\nabla W(\boldsymbol{r}_i-\boldsymbol{r}_j, h)$
 
 ### 沾性力(viscosity force)
-$\mathbf{f}_i=\mu\sum_{j!=i}(\mathbf{u}_j-\mathbf{u}_i)\frac{m_j}{\rho_j}\nabla^2W(\boldsymbol{r}_i-\boldsymbol{r}_j, h)$
+$\mathbf{f}_{i}=\mu\sum_{j!=i}(\mathbf{u}_j-\mathbf{u}_i)\frac{m_j}{\rho_j}\nabla^2W(\boldsymbol{r}_i-\boldsymbol{r}_j, h)$
 
 ### 表面张力(surface tension force)
-$\mathbf{f}_i=-\sigma\frac{\mathbf{n}_{i}}{\left\|\mathbf{n}_{i}\right\|}\sum_j\frac{m_j}{\rho_j}\nabla^2W(\boldsymbol{r}_i-\boldsymbol{r}_j, h)$
+$\mathbf{f}_{i}=-\sigma\frac{\mathbf{n}_{i}}{\left\|\mathbf{n}_{i}\right\|}\sum_j\frac{m_j}{\rho_j}\nabla^2W(\boldsymbol{r}_i-\boldsymbol{r}_j, h)$
 
 ## 核函数
 ### Poly6
