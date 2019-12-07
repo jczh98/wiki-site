@@ -38,6 +38,7 @@ nav:
       - Offline: graphics/rendering/offline.md
     - Simulation:
       - Basic: graphics/simulation/basic_def.md
+      - SPH: graphics/simulation/sph.md
 
 # Extensions
 markdown_extensions:
