@@ -14,18 +14,20 @@ $\rho(\mathbf{r_i})=\sum_j m_j W(\mathbf{r}_i-\mathbf{r}_j,h)$
 ### 表面法线
 $\mathbf{n}(\boldsymbol{r})=\sum_j \frac{m_J}{\rho_j}\nabla^2W(\mathbf{r}-\mathbf{r}_j, h)$
 
-### 压力
-$\mathbf{f}_{i}=-\rho_{i} \sum_{j \neq i}\left(\frac{p_{i}}{\rho_{i}}+\frac{p_{j}}{\rho_{j}}\right) m_{j} \nabla W\left(\mathbf{r}_{i}-\mathbf{r}_{j}, h\right)$
+### 压力$$
+
+$\mathbf{f}_{i}=-\rho_{i} \sum_{j \neq i}(\frac{p_{i}}{\rho_{i}}+\frac{p_{j}}{\rho_{j}}) m_{j} \nabla W(\mathbf{r}_{i}-\mathbf{r}_{j}, h)$
 
 ### 沾性力(viscosity force)
-$\mathbf{f}_{i}=\mu\sum_{j!=i}(\mathbf{u}_j-\mathbf{u}_i)\frac{m_j}{\rho_j}\nabla^2W(\boldsymbol{r}_i-\boldsymbol{r}_j, h)$
+$\mathbf{f}_{i}=\mu\sum_{j\neq i}(\mathbf{u}_j-\mathbf{u}_i)\frac{m_j}{\rho_j}\nabla^2W(\boldsymbol{r}_i-\boldsymbol{r}_j, h)$
 
 ### 表面张力(surface tension force)
 $\mathbf{f}_{i}=-\sigma\frac{\mathbf{n}_{i}}{\left\|\mathbf{n}_{i}\right\|}\sum_j\frac{m_j}{\rho_j}\nabla^2W(\boldsymbol{r}_i-\boldsymbol{r}_j, h)$
 
 ## 核函数
 ### Poly6
-$W(\mathbf{r}, h)=\left\{\begin{array}{ll}{\frac{315}{64 \pi h^{9}}\left(h^{2}-r^{2}\right)^{3}} & {0 \leq r \leq h} \\ {0} & {\text { otherwise }}\end{array}\right.$
+$W(\mathbf{r}, h)=\left\{\begin{array}{ll}{\frac{315}{64 \pi k^{9}}\left(h^{2}-r^{2}\right)^{3}} & {0 \leq r \leq h} \\ {0} & {\text { otherwise }}\end{array}\right.$
+
 
 适用于插值密度
 
