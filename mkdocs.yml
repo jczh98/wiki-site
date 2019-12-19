@@ -34,7 +34,9 @@ nav:
       - Basic: ml/cv/basic.md
   - Graphics :
     - Rendering:
+      - Basic: graphics/rendering/basic.md
       - Offline: graphics/rendering/offline.md
+      - Reflection: graphics/rendering/reflection.md
     - Simulation:
       - Basic: graphics/simulation/basic_def.md
       - SPH: graphics/simulation/sph.md
