@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
       
       <link rel="shortcut icon" href="../../../favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
     
     
       
@@ -40,7 +40,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.adb8469c.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -51,7 +51,7 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
+      <script src="../../../assets/javascripts/modernizr.86422ebf.js"></script>
     
     
       
@@ -87,7 +87,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#reflection" tabindex="1" class="md-skip">
+      <a href="#reflection" tabindex="0" class="md-skip">
         跳转至
       </a>
     
@@ -96,7 +96,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../../.." title="Neverfelly's wiki" class="md-header-nav__button md-logo">
+        <a href="../../.." title="Neverfelly's wiki" aria-label="Neverfelly's wiki" class="md-header-nav__button md-logo">
           
             <i class="md-icon">school</i>
           
@@ -127,7 +127,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="__search"></label>
       <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
         &#xE5CD;
@@ -440,6 +440,47 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#fresnell" class="md-nav__link">
+    Fresnell公式
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dielectric-dielectric" class="md-nav__link">
+    Dielectric-Dielectric
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dielectric-conductor" class="md-nav__link">
+    Dielectric-Conductor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fresnel-schlicks-approximation" class="md-nav__link">
+    Fresnel Schlick’s approximation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    reference
+  </a>
+  
+</li>
+      
       
       
       
@@ -536,6 +577,47 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#fresnell" class="md-nav__link">
+    Fresnell公式
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dielectric-dielectric" class="md-nav__link">
+    Dielectric-Dielectric
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dielectric-conductor" class="md-nav__link">
+    Dielectric-Conductor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fresnel-schlicks-approximation" class="md-nav__link">
+    Fresnel Schlick’s approximation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    reference
+  </a>
+  
+</li>
+      
       
       
       
@@ -572,6 +654,50 @@
 </script>
 </div>
 <p>运用<span><span class="MathJax_Preview">\sin2\theta=2\sin\theta\cos\theta</span><script type="math/tex">\sin2\theta=2\sin\theta\cos\theta</script></span>就很好计算了</p>
+<h2 id="fresnell">Fresnell公式<a class="headerlink" href="#fresnell" title="Permanent link">&para;</a></h2>
+<h3 id="dielectric-dielectric">Dielectric-Dielectric<a class="headerlink" href="#dielectric-dielectric" title="Permanent link">&para;</a></h3>
+<p><span><span class="MathJax_Preview">r_s=\frac{n_i\cos\theta_i-n_t\cos\theta_t}{n_i\cos\theta_i+n_t\cos\theta_t}</span><script type="math/tex">r_s=\frac{n_i\cos\theta_i-n_t\cos\theta_t}{n_i\cos\theta_i+n_t\cos\theta_t}</script></span></p>
+<p><span><span class="MathJax_Preview">r_p=\frac{n_t\cos\theta_i-n_i\cos\theta_t}{n_t\cos\theta_i+n_i\cos\theta_t}</span><script type="math/tex">r_p=\frac{n_t\cos\theta_i-n_i\cos\theta_t}{n_t\cos\theta_i+n_i\cos\theta_t}</script></span></p>
+<p><span><span class="MathJax_Preview">Fr=\frac{r_s^2+r_p^2}{2}</span><script type="math/tex">Fr=\frac{r_s^2+r_p^2}{2}</script></span></p>
+<p>Snell law : <span><span class="MathJax_Preview">n_i\sin\theta_i=n_t\sin\theta_t</span><script type="math/tex">n_i\sin\theta_i=n_t\sin\theta_t</script></span>可以用来简化参数</p>
+<h3 id="dielectric-conductor">Dielectric-Conductor<a class="headerlink" href="#dielectric-conductor" title="Permanent link">&para;</a></h3>
+<p><span><span class="MathJax_Preview">r_s=\frac{n_i\cos\theta_i-(n_t-\mathbf{i}k_t)\cos\theta_t}{n_i\cos\theta_i+(n_t-\mathbf{i}k_t)\cos\theta_t}</span><script type="math/tex">r_s=\frac{n_i\cos\theta_i-(n_t-\mathbf{i}k_t)\cos\theta_t}{n_i\cos\theta_i+(n_t-\mathbf{i}k_t)\cos\theta_t}</script></span></p>
+<p><span><span class="MathJax_Preview">r_p=\frac{(n_t-\mathbf{i}k_t)\cos\theta_i-n_i\cos\theta_t}{(n_t-\mathbf{i}k_t)\cos\theta_i+n_i\cos\theta_t}</span><script type="math/tex">r_p=\frac{(n_t-\mathbf{i}k_t)\cos\theta_i-n_i\cos\theta_t}{(n_t-\mathbf{i}k_t)\cos\theta_i+n_i\cos\theta_t}</script></span></p>
+<p><span><span class="MathJax_Preview">Fr=\frac{r_s^2+r_p^2}{2}=\frac{R_s+R_p}{2}</span><script type="math/tex">Fr=\frac{r_s^2+r_p^2}{2}=\frac{R_s+R_p}{2}</script></span></p>
+<div>
+<div class="MathJax_Preview">
+\begin{array}{l}{a^{2}=\frac{1}{2 n_{i}^{2}}\left(\sqrt{\left(n_{t}^{2}-k_{t}^{2}-n_{i}^{2} \sin ^{2} \theta\right)^{2}+4 n_{t}^{2} k_{t}^{2}}+n_{t}^{2}-k_{t}^{2}-n_{i}^{2} \sin ^{2} \theta\right)} \\ {b^{2}=\frac{1}{2 n_{i}^{2}}\left(\sqrt{\left(n_{t}^{2}-k_{t}^{2}-n_{i}^{2} \sin ^{2} \theta\right)^{2}+4 n_{t}^{2} k_{t}^{2}}-n_{t}^{2}+k_{t}^{2}+n_{i}^{2} \sin ^{2} \theta\right)} \\ {R_{s}=\frac{a^{2}+b^{2}-2 a \cos \theta+\cos ^{2} \theta}{a^{2}+b^{2}+2 a \cos \theta+\cos ^{2} \theta}} \\ {R_{p}=R_{s} \frac{a^{2}+b^{2}-2 a \sin \theta \tan \theta+\sin ^{2} \theta \tan ^{2} \theta}{\theta \tan ^{2} \theta}}\end{array}
+</div>
+<script type="math/tex; mode=display">
+\begin{array}{l}{a^{2}=\frac{1}{2 n_{i}^{2}}\left(\sqrt{\left(n_{t}^{2}-k_{t}^{2}-n_{i}^{2} \sin ^{2} \theta\right)^{2}+4 n_{t}^{2} k_{t}^{2}}+n_{t}^{2}-k_{t}^{2}-n_{i}^{2} \sin ^{2} \theta\right)} \\ {b^{2}=\frac{1}{2 n_{i}^{2}}\left(\sqrt{\left(n_{t}^{2}-k_{t}^{2}-n_{i}^{2} \sin ^{2} \theta\right)^{2}+4 n_{t}^{2} k_{t}^{2}}-n_{t}^{2}+k_{t}^{2}+n_{i}^{2} \sin ^{2} \theta\right)} \\ {R_{s}=\frac{a^{2}+b^{2}-2 a \cos \theta+\cos ^{2} \theta}{a^{2}+b^{2}+2 a \cos \theta+\cos ^{2} \theta}} \\ {R_{p}=R_{s} \frac{a^{2}+b^{2}-2 a \sin \theta \tan \theta+\sin ^{2} \theta \tan ^{2} \theta}{\theta \tan ^{2} \theta}}\end{array}
+</script>
+</div>
+<p>实际计算中取<span><span class="MathJax_Preview">\eta=\frac{\eta_t}{\eta_i}</span><script type="math/tex">\eta=\frac{\eta_t}{\eta_i}</script></span>, <span><span class="MathJax_Preview">\eta_k={k_t\over n_i}</span><script type="math/tex">\eta_k={k_t\over n_i}</script></span>, <span><span class="MathJax_Preview">\theta=\theta_i</span><script type="math/tex">\theta=\theta_i</script></span></p>
+<div>
+<div class="MathJax_Preview">
+\begin{array}{l}{a^{2}=\frac{1}{2}\left(\sqrt{\left(\eta^{2}-\eta_{k}^{2}-\sin ^{2} \theta\right)^{2}+4 \eta^{2} \eta_{k}^{2}}+\eta^{2}-\eta_{k}^{2}-\sin ^{2} \theta\right)} \\ {b^{2}=\frac{1}{2}\left(\sqrt{\left(\eta^{2}-\eta_{k}^{2}-\sin ^{2} \theta\right)^{2}+4 \eta^{2} \eta_{k}^{2}}-\eta^{2}+\eta_{k}^{2}+\sin ^{2} \theta\right)}\end{array}
+</div>
+<script type="math/tex; mode=display">
+\begin{array}{l}{a^{2}=\frac{1}{2}\left(\sqrt{\left(\eta^{2}-\eta_{k}^{2}-\sin ^{2} \theta\right)^{2}+4 \eta^{2} \eta_{k}^{2}}+\eta^{2}-\eta_{k}^{2}-\sin ^{2} \theta\right)} \\ {b^{2}=\frac{1}{2}\left(\sqrt{\left(\eta^{2}-\eta_{k}^{2}-\sin ^{2} \theta\right)^{2}+4 \eta^{2} \eta_{k}^{2}}-\eta^{2}+\eta_{k}^{2}+\sin ^{2} \theta\right)}\end{array}
+</script>
+</div>
+<p>用下列式子可以简化计算</p>
+<div>
+<div class="MathJax_Preview">
+\begin{array}{l}{a^{2}+b^{2}=\sqrt{\left(\eta^{2}-\eta_{k}^{2}-\sin ^{2} \theta\right)^{2}+4 \eta^{2} \eta_{k}^{2}}} \\ {\tan \theta=\frac{\sin \theta}{\cos \theta}} \\ {R_{p}=R_{s} \frac{\cos ^{2} \theta\left(a^{2}+b^{2}\right)-2 a \cos \theta \sin ^{2} \theta+\sin ^{4} \theta}{\cos ^{2} \theta\left(a^{2}+b^{2}\right)+2 a \cos \theta \sin ^{2} \theta+\sin ^{4} \theta}}\end{array}
+</div>
+<script type="math/tex; mode=display">
+\begin{array}{l}{a^{2}+b^{2}=\sqrt{\left(\eta^{2}-\eta_{k}^{2}-\sin ^{2} \theta\right)^{2}+4 \eta^{2} \eta_{k}^{2}}} \\ {\tan \theta=\frac{\sin \theta}{\cos \theta}} \\ {R_{p}=R_{s} \frac{\cos ^{2} \theta\left(a^{2}+b^{2}\right)-2 a \cos \theta \sin ^{2} \theta+\sin ^{4} \theta}{\cos ^{2} \theta\left(a^{2}+b^{2}\right)+2 a \cos \theta \sin ^{2} \theta+\sin ^{4} \theta}}\end{array}
+</script>
+</div>
+<h3 id="fresnel-schlicks-approximation">Fresnel Schlick’s approximation<a class="headerlink" href="#fresnel-schlicks-approximation" title="Permanent link">&para;</a></h3>
+<p><span><span class="MathJax_Preview">Fr=R(0)+(1-R(0))(1-\cos \theta)^{5}</span><script type="math/tex">Fr=R(0)+(1-R(0))(1-\cos \theta)^{5}</script></span></p>
+<p>对于conductor <span><span class="MathJax_Preview">R(0)=\frac{\left(n_{t}-n_{i}\right)^{2}+k_{t}^{2}}{\left(n_{t}+n_{i}\right)^{2}+k_{t}^{2}}=\frac{(\eta-1)^{2}+\eta_{k}^{2}}{(\eta+1)^{2}+\eta_{k}^{2}}</span><script type="math/tex">R(0)=\frac{\left(n_{t}-n_{i}\right)^{2}+k_{t}^{2}}{\left(n_{t}+n_{i}\right)^{2}+k_{t}^{2}}=\frac{(\eta-1)^{2}+\eta_{k}^{2}}{(\eta+1)^{2}+\eta_{k}^{2}}</script></span></p>
+<p>对于dielectric <span><span class="MathJax_Preview">R(0)=\frac{\left(n_{t}-n_{i}\right)^{2}}{\left(n_{t}+n_{i}\right)^{2}}=\frac{(\eta-1)^{2}}{(\eta+1)^{2}}</span><script type="math/tex">R(0)=\frac{\left(n_{t}-n_{i}\right)^{2}}{\left(n_{t}+n_{i}\right)^{2}}=\frac{(\eta-1)^{2}}{(\eta+1)^{2}}</script></span></p>
+<h2 id="reference">reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Memo on Fresnel equations. <a href="https://seblagarde.wordpress.com/2013/04/29/memo-on-fresnel-equations/">https://seblagarde.wordpress.com/2013/04/29/memo-on-fresnel-equations/</a></li>
+</ul>
                 
                   
                 
@@ -630,9 +756,9 @@
       <div class="md-footer-copyright">
         
         powered by
-        <a href="https://www.mkdocs.org">MkDocs</a>
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
         and
-        <a href="https://squidfunk.github.io/mkdocs-material/">
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
           Material for MkDocs</a>
       </div>
       
@@ -642,7 +768,7 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
+      <script src="../../../assets/javascripts/application.c33a9706.js"></script>
       
         
         
