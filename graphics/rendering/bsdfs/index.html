@@ -36,7 +36,7 @@
     
     
       
-        <title>Offline - Neverfelly's wiki</title>
+        <title>BSDF重要性采样 - Neverfelly's wiki</title>
       
     
     
@@ -87,7 +87,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#pathtracing" tabindex="0" class="md-skip">
+      <a href="#bsdf" tabindex="0" class="md-skip">
         跳转至
       </a>
     
@@ -113,7 +113,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Offline
+                BSDF重要性采样
               
             </span>
           
@@ -393,20 +393,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Offline" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../offline/" title="Offline" class="md-nav__link">
       Offline
     </a>
-    
   </li>
 
         
@@ -426,11 +417,89 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../bsdfs/" title="BSDF重要性采样" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        BSDF重要性采样
+      </label>
+    
+    <a href="./" title="BSDF重要性采样" class="md-nav__link md-nav__link--active">
       BSDF重要性采样
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#diffuse-reflection" class="md-nav__link">
+    Diffuse Reflection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microfacet" class="md-nav__link">
+    Microfacet
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ndf" class="md-nav__link">
+    NDF法线分布函数
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beckmann" class="md-nav__link">
+    Beckmann
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ggxtrowbridge-reitz" class="md-nav__link">
+    GGX(Trowbridge-Reitz)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -509,6 +578,62 @@
     
   
   
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#diffuse-reflection" class="md-nav__link">
+    Diffuse Reflection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microfacet" class="md-nav__link">
+    Microfacet
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ndf" class="md-nav__link">
+    NDF法线分布函数
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beckmann" class="md-nav__link">
+    Beckmann
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ggxtrowbridge-reitz" class="md-nav__link">
+    GGX(Trowbridge-Reitz)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -520,7 +645,29 @@
               
                 
                 
-                <h1 id="pathtracing">PathTracing<a class="headerlink" href="#pathtracing" title="Permanent link">&para;</a></h1>
+                <h1 id="bsdf">BSDF重要性采样<a class="headerlink" href="#bsdf" title="Permanent link">&para;</a></h1>
+<h2 id="diffuse-reflection">Diffuse Reflection<a class="headerlink" href="#diffuse-reflection" title="Permanent link">&para;</a></h2>
+<p>半球方向余弦采样可得出射光<span><span class="MathJax_Preview">\omega_o</span><script type="math/tex">\omega_o</script></span></p>
+<p><span><span class="MathJax_Preview">p(\omega)=\frac{\cos\theta}{\pi}</span><script type="math/tex">p(\omega)=\frac{\cos\theta}{\pi}</script></span></p>
+<h2 id="microfacet">Microfacet<a class="headerlink" href="#microfacet" title="Permanent link">&para;</a></h2>
+<p>通常对于微表面方法可以直接采样法线分布函数</p>
+<p>因为<span><span class="MathJax_Preview">\int_{\mathrm{H^2}}D(\omega_h)\cos\theta_h d \omega_h=1</span><script type="math/tex">\int_{\mathrm{H^2}}D(\omega_h)\cos\theta_h d \omega_h=1</script></span>，所以微表面pdf等于<span><span class="MathJax_Preview">D(\omega_h)\cos\theta_h</span><script type="math/tex">D(\omega_h)\cos\theta_h</script></span></p>
+<h3 id="ndf">NDF法线分布函数<a class="headerlink" href="#ndf" title="Permanent link">&para;</a></h3>
+<h4 id="beckmann">Beckmann<a class="headerlink" href="#beckmann" title="Permanent link">&para;</a></h4>
+<p>各向异向性Beckmann-Spizzichino模型
+$$
+D\left(\omega_{\mathrm{h}}\right)=\frac{\mathrm{e}^{-\tan ^{2} \theta_{\mathrm{h}}\left(\cos ^{2} \phi_{\mathrm{h}} / \alpha_{x}^{2}+\sin ^{2} \phi_{\mathrm{h}} / \alpha_{y}^{2}\right)}}{\pi \alpha_{x} \alpha_{y} \cos ^{4} \theta_{\mathrm{h}}}
+$$
+因为有<span><span class="MathJax_Preview">p(\omega_h)=D(\omega_h)\cos\theta_h</span><script type="math/tex">p(\omega_h)=D(\omega_h)\cos\theta_h</script></span>, 转换成成球坐标表示<span><span class="MathJax_Preview">p(\omega_h)\sin\theta_h=p(\theta_h,\phi_h)</span><script type="math/tex">p(\omega_h)\sin\theta_h=p(\theta_h,\phi_h)</script></span>,又因为<span><span class="MathJax_Preview">\theta, \phi</span><script type="math/tex">\theta, \phi</script></span>是独立事件，所以<span><span class="MathJax_Preview">p(\theta_h,\phi_h)=p(\theta_h)p(\phi_h)</span><script type="math/tex">p(\theta_h,\phi_h)=p(\theta_h)p(\phi_h)</script></span>,而<span><span class="MathJax_Preview">p(\phi_h)</span><script type="math/tex">p(\phi_h)</script></span>是均匀分布等于<span><span class="MathJax_Preview">{1\over 2\pi}</span><script type="math/tex">{1\over 2\pi}</script></span>,所以可以算出<span><span class="MathJax_Preview">p(\theta_h)=2\pi\sin\theta_h\cos\theta_hD(\omega_h)</span><script type="math/tex">p(\theta_h)=2\pi\sin\theta_h\cos\theta_hD(\omega_h)</script></span>,于是我们可以求得cdf <span><span class="MathJax_Preview">P(\theta)=\int p(\theta)\mathrm d\theta=1-\mathrm{e}^{-\tan ^{2} \theta (\frac{\cos^2\phi}{\alpha_x^2}+\frac{\sin^2\phi}{\alpha_y^2})}</span><script type="math/tex">P(\theta)=\int p(\theta)\mathrm d\theta=1-\mathrm{e}^{-\tan ^{2} \theta (\frac{\cos^2\phi}{\alpha_x^2}+\frac{\sin^2\phi}{\alpha_y^2})}</script></span>,令<span><span class="MathJax_Preview">\xi_1=P(\theta),\xi_2=P(\phi)</span><script type="math/tex">\xi_1=P(\theta),\xi_2=P(\phi)</script></span>，这样我们就根据inverse sampling求得球坐标上均匀采样的<span><span class="MathJax_Preview">\theta, \phi</span><script type="math/tex">\theta, \phi</script></span>,再将球坐标代换回<span><span class="MathJax_Preview">\omega_h=(\sin\theta_h\cos\phi_h,\sin\theta_h\sin\phi_h,\cos\theta_h)</span><script type="math/tex">\omega_h=(\sin\theta_h\cos\phi_h,\sin\theta_h\sin\phi_h,\cos\theta_h)</script></span>就完成了对<span><span class="MathJax_Preview">\omega_h</span><script type="math/tex">\omega_h</script></span>方向的重要性采样</p>
+<p>有了<span><span class="MathJax_Preview">\omega_h</span><script type="math/tex">\omega_h</script></span>就代表有了表面的法线，依据对称根据<span><span class="MathJax_Preview">\omega_i</span><script type="math/tex">\omega_i</script></span>就可以直接求得采样后的出射光线<span><span class="MathJax_Preview">\omega_o</span><script type="math/tex">\omega_o</script></span></p>
+<p>之前说到对于采样<span><span class="MathJax_Preview">\omega_h</span><script type="math/tex">\omega_h</script></span>的pdf等于<span><span class="MathJax_Preview">D(\omega_h)\cos\theta_h</span><script type="math/tex">D(\omega_h)\cos\theta_h</script></span>,那么对于采样<span><span class="MathJax_Preview">\omega_o</span><script type="math/tex">\omega_o</script></span>,这两者分布并不相等，需要将<span><span class="MathJax_Preview">p(\omega_h)</span><script type="math/tex">p(\omega_h)</script></span>转换到<span><span class="MathJax_Preview">p(\omega_o)</span><script type="math/tex">p(\omega_o)</script></span>,<span><span class="MathJax_Preview">\int p(\theta_o)\mathrm{d}\theta_o=1,\int p(\theta_o)\mathrm{d}\theta_o=1</span><script type="math/tex">\int p(\theta_o)\mathrm{d}\theta_o=1,\int p(\theta_o)\mathrm{d}\theta_o=1</script></span>，只需要考虑<span><span class="MathJax_Preview">{\mathrm{d}\omega_h\over \mathrm d{\omega_o}}</span><script type="math/tex">{\mathrm{d}\omega_h\over \mathrm d{\omega_o}}</script></span>之间的关系就可以变换过去,而从几何角度考虑可得<span><span class="MathJax_Preview">\theta_o=2\theta_h,\phi_h=\phi_o</span><script type="math/tex">\theta_o=2\theta_h,\phi_h=\phi_o</script></span>
+$$
+\begin{aligned} \frac{\mathrm{d} \omega_{\mathrm{h}}}{\mathrm{d} \omega_{\mathrm{o}}} &amp;=\frac{\sin \theta_{\mathrm{h}} \mathrm{d} \theta_{\mathrm{h}} \mathrm{d} \phi_{\mathrm{h}}}{\sin 2 \theta_{\mathrm{h}} 2 \mathrm{d} \theta_{\mathrm{h}} \mathrm{d} \phi_{\mathrm{h}}} \ &amp;=\frac{\sin \theta_{\mathrm{h}}}{4 \cos \theta_{\mathrm{h}} \sin \theta_{\mathrm{h}}} \ &amp;=\frac{1}{4 \cos \theta_{\mathrm{h}}} \ &amp;=\frac{1}{4\left(\omega_{\mathrm{o}} \cdot \omega_{\mathrm{h}}\right)} \end{aligned}
+$$
+所以可得<span><span class="MathJax_Preview">p(\omega_o)=\frac{p(\omega_h)}{4(\omega_o\cdot\omega_h)}</span><script type="math/tex">p(\omega_o)=\frac{p(\omega_h)}{4(\omega_o\cdot\omega_h)}</script></span></p>
+<h4 id="ggxtrowbridge-reitz">GGX(Trowbridge-Reitz)<a class="headerlink" href="#ggxtrowbridge-reitz" title="Permanent link">&para;</a></h4>
+<p><span><span class="MathJax_Preview">D\left(\omega_{\mathrm{h}}\right)=\frac{1}{\pi \alpha_{x} \alpha_{y} \cos ^{4} \theta_{\mathrm{h}}\left(1+\tan ^{2} \theta_{\mathrm{h}}\left(\cos ^{2} \phi_{\mathrm{h}} / \alpha_{x}^{2}+\sin ^{2} \phi_{\mathrm{h}} / \alpha_{y}^{2}\right)\right)^{2}}</span><script type="math/tex">D\left(\omega_{\mathrm{h}}\right)=\frac{1}{\pi \alpha_{x} \alpha_{y} \cos ^{4} \theta_{\mathrm{h}}\left(1+\tan ^{2} \theta_{\mathrm{h}}\left(\cos ^{2} \phi_{\mathrm{h}} / \alpha_{x}^{2}+\sin ^{2} \phi_{\mathrm{h}} / \alpha_{y}^{2}\right)\right)^{2}}</script></span></p>
+<p>采样方法与Beckmann一致</p>
                 
                   
                 
@@ -542,7 +689,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../basic/" title="Basic" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../reflection/" title="Reflection" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -551,19 +698,19 @@
                 <span class="md-footer-nav__direction">
                   上一页
                 </span>
-                Basic
+                Reflection
               </span>
             </div>
           </a>
         
         
-          <a href="../reflection/" title="Reflection" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../simulation/basic_def/" title="Basic" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   下一页
                 </span>
-                Reflection
+                Basic
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

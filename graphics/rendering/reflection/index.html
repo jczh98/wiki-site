@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
       
       <link rel="shortcut icon" href="../../../favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
     
     
       
@@ -475,6 +475,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#microfacet" class="md-nav__link">
+    Microfacet
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gmasking-and-shadowing" class="md-nav__link">
+    阴影遮蔽项G(Masking and Shadowing)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reference" class="md-nav__link">
     reference
   </a>
@@ -489,6 +509,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../bsdfs/" title="BSDF重要性采样" class="md-nav__link">
+      BSDF重要性采样
+    </a>
   </li>
 
         
@@ -612,6 +644,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#microfacet" class="md-nav__link">
+    Microfacet
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gmasking-and-shadowing" class="md-nav__link">
+    阴影遮蔽项G(Masking and Shadowing)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reference" class="md-nav__link">
     reference
   </a>
@@ -694,6 +746,10 @@
 <p><span><span class="MathJax_Preview">Fr=R(0)+(1-R(0))(1-\cos \theta)^{5}</span><script type="math/tex">Fr=R(0)+(1-R(0))(1-\cos \theta)^{5}</script></span></p>
 <p>对于conductor <span><span class="MathJax_Preview">R(0)=\frac{\left(n_{t}-n_{i}\right)^{2}+k_{t}^{2}}{\left(n_{t}+n_{i}\right)^{2}+k_{t}^{2}}=\frac{(\eta-1)^{2}+\eta_{k}^{2}}{(\eta+1)^{2}+\eta_{k}^{2}}</span><script type="math/tex">R(0)=\frac{\left(n_{t}-n_{i}\right)^{2}+k_{t}^{2}}{\left(n_{t}+n_{i}\right)^{2}+k_{t}^{2}}=\frac{(\eta-1)^{2}+\eta_{k}^{2}}{(\eta+1)^{2}+\eta_{k}^{2}}</script></span></p>
 <p>对于dielectric <span><span class="MathJax_Preview">R(0)=\frac{\left(n_{t}-n_{i}\right)^{2}}{\left(n_{t}+n_{i}\right)^{2}}=\frac{(\eta-1)^{2}}{(\eta+1)^{2}}</span><script type="math/tex">R(0)=\frac{\left(n_{t}-n_{i}\right)^{2}}{\left(n_{t}+n_{i}\right)^{2}}=\frac{(\eta-1)^{2}}{(\eta+1)^{2}}</script></span></p>
+<h2 id="microfacet">Microfacet<a class="headerlink" href="#microfacet" title="Permanent link">&para;</a></h2>
+<p><span><span class="MathJax_Preview">f_r(\omega_i,\omega_o)=\frac{D(\omega_h)G(\omega_i,\omega_o)F_r(\omega_o)}{4\cos\theta_o\cos\theta_i}</span><script type="math/tex">f_r(\omega_i,\omega_o)=\frac{D(\omega_h)G(\omega_i,\omega_o)F_r(\omega_o)}{4\cos\theta_o\cos\theta_i}</script></span></p>
+<p>其中<span><span class="MathJax_Preview">D</span><script type="math/tex">D</script></span>为法线分布函数，<span><span class="MathJax_Preview">G</span><script type="math/tex">G</script></span>为阴影遮挡项，<span><span class="MathJax_Preview">F_r</span><script type="math/tex">F_r</script></span>为菲尼尔项</p>
+<h3 id="gmasking-and-shadowing">阴影遮蔽项G(Masking and Shadowing)<a class="headerlink" href="#gmasking-and-shadowing" title="Permanent link">&para;</a></h3>
 <h2 id="reference">reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Memo on Fresnel equations. <a href="https://seblagarde.wordpress.com/2013/04/29/memo-on-fresnel-equations/">https://seblagarde.wordpress.com/2013/04/29/memo-on-fresnel-equations/</a></li>
@@ -734,13 +790,13 @@
           </a>
         
         
-          <a href="../../simulation/basic_def/" title="Basic" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../bsdfs/" title="BSDF重要性采样" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   下一页
                 </span>
-                Basic
+                BSDF重要性采样
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -787,7 +843,7 @@
           
         
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"1.1",url:{base:"../../.."}})</script>
       
         <script src="../../../static/js/katex.js"></script>
       
