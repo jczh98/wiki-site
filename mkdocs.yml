@@ -37,6 +37,7 @@ nav:
       - Basic: graphics/rendering/basic.md
       - Offline: graphics/rendering/offline.md
       - Reflection: graphics/rendering/reflection.md
+      - BSDF重要性采样: graphics/rendering/bsdfs.md
     - Simulation:
       - Basic: graphics/simulation/basic_def.md
       - SPH: graphics/simulation/sph.md

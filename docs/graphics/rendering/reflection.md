@@ -61,5 +61,12 @@ $Fr=R(0)+(1-R(0))(1-\cos \theta)^{5}$
 
 对于dielectric $R(0)=\frac{\left(n_{t}-n_{i}\right)^{2}}{\left(n_{t}+n_{i}\right)^{2}}=\frac{(\eta-1)^{2}}{(\eta+1)^{2}}$
 
+
+## Microfacet
+$f_r(\omega_i,\omega_o)=\frac{D(\omega_h)G(\omega_i,\omega_o)F_r(\omega_o)}{4\cos\theta_o\cos\theta_i}$
+
+其中$D$为法线分布函数，$G$为阴影遮挡项，$F_r$为菲尼尔项
+### 阴影遮蔽项G(Masking and Shadowing)
+
 ## reference
 - Memo on Fresnel equations. [https://seblagarde.wordpress.com/2013/04/29/memo-on-fresnel-equations/](https://seblagarde.wordpress.com/2013/04/29/memo-on-fresnel-equations/)
